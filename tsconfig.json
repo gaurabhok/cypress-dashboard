@@ -1,0 +1,23 @@
+{
+  "extends": "@umidbekk/configs/tsconfig.json",
+  "include": [
+    "scripts",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "node_modules/.prisma/client/index.d.ts"
+  ],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "jsx": "preserve",
+    "incremental": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@/ui/*": ["./ui/*"],
+      "@/lib/*": ["./lib/*"]
+    }
+  }
+}

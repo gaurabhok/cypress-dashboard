@@ -1,0 +1,24 @@
+name: "Execute Next Cypress Dashboard Task"
+description: "Executes Next Cypress Dashboard Task"
+author: "umidbekk"
+inputs:
+  token:
+    required: true
+    default: "${{ github.token }}"
+    description: "GitHub Token"
+
+  environment:
+    required: true
+    description: "GitHub environment of the deployment"
+
+  name:
+    required: true
+    description: "Task name"
+
+  ignore_errors:
+    required: false
+    description: "Threats errors as warnings"
+
+runs:
+  using: "node12"
+  main: "dist/index.js"

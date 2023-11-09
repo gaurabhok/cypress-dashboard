@@ -1,0 +1,36 @@
+import { Button, Divider, Stack } from "@mui/material";
+import NextLink from "next/link";
+import { PublicLayout } from "@/ui/core/PublicLayout";
+import Deployment from "../docs/deployment.md";
+import Secrets from "../docs/secrets.md";
+import Privacy from "../docs/privacy.md";
+import Ci from "../docs/ci.md";
+
+<PublicLayout title="Docs" maxWidth="md" action={
+  <NextLink passHref={true} href="/">
+    <Button color="inherit">Home</Button>
+  </NextLink>
+}>
+
+### Table of content
+
+- [Deployment](#deployment)
+- [Secrets](#secrets)
+- [Continuous integration](#continuous_integration)
+- [Privacy](#privacy)
+
+<Stack spacing={2}>
+<Divider />
+<Deployment />
+<Divider />
+<Secrets />
+<Divider />
+<Ci />
+<Divider />
+<Privacy />
+
+[Back to top ⬆](#table_of_content)
+
+</Stack>
+
+</PublicLayout>
