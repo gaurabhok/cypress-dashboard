@@ -63,7 +63,7 @@
     "@umidbekk/configs": "0.1.0",
     "cypress": "8.7.0",
     "dotenv": "10.0.0",
-    "esbuild": "0.13.12",
+    "esbuild": "0.27.1",
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.4",
     "execa": "5.1.1",
